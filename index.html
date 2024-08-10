@@ -10,232 +10,221 @@
     <title>Athletico SJC</title>
     <style>
         body {
-    background-image: url('components/images/estadio.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    font-family: poppinsregular;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
-    position: relative;
-    z-index: 0;
-}
+            background-image: url('components/images/estadio.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: poppinsregular;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
+            position: relative;
+            z-index: 0;
+        }
 
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: black; /* Ou outra cor, conforme desejado */
-    opacity: 0.7; /* Ajuste o valor da opacidade conforme necessário */
-    z-index: -1;
-}
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: black; /* Ou outra cor, conforme desejado */
+            opacity: 0.7; /* Ajuste o valor da opacidade conforme necessário */
+            z-index: -1;
+        }
 
-header {
-    display:inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    
-    
-}
+        header {
+            display:inline-flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-#title{
-    flex-direction: column;
-    line-height: 10px;
-    
+        #title {
+            flex-direction: column;
+            line-height: 10px;
+        }
 
-}
+        li {
+            display: inline-block;
+            margin: 20px;
+        }
 
-li{
-    display: inline-block;
-    margin: 20px;
-}
+        a {
+            color: white;
+        }
 
-a{
-    color: white;
-}
+        #whatsapp-btn {
+            border: 2px solid #25D366;
+            padding: 10px;
+            border-radius: 15px;
+            margin-left: 250px;
+        }
 
+        #whatsapp-btn:hover {
+            background-color: #25D366;
+            color: white;
+        }
 
-#whatsapp-btn{
-    border: 2px solid #25D366;
-    padding: 10px;
-    border-radius: 15px;
-    margin-left: 250px;
-}
+        h1 {
+            font-weight: 200;
+        }
 
+        main {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+        }
 
-#whatsapp-btn:hover{
-    background-color: #25D366;
-    color: white;
-}
+        h2 {
+            font-size: 30px;
+            line-height: 30px;
+            font-family: poppinsmedium;
+            margin-top: 01px;
+            margin-bottom: 01px;
+        }
 
-h1{
-    font-weight: 200;
-    
-}
+        p {
+            line-height: 20px;
+            max-width: 500px;
+            font-family: poppinslight;
+            margin-top: 05px;
+            margin-bottom: 05px;
+        }
 
-main {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
+        img {
+            width: 580px;
+            margin-left: 10px;
+        }
 
-}
+        #capsjc {
+            width: 180px;
+        }
 
-h2{
-    font-size: 30px;
-    line-height: 30px;
-    font-family: poppinsmedium;
-    margin-top: 01px;
-    margin-bottom: 01px;
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+        }
 
-}
+        input {
+            margin-top: 01px;
+            height: 20px;
+            padding: 20px;
+            border-radius: 20px;
+            border: none;
+        }
 
-p{
-    line-height: 20px;
-    max-width: 500px;
-    font-family: poppinslight;
-    margin-top: 05px;
-    margin-bottom: 05px;
-}
+        form [type="submit"] {
+            height: 50px;
+            width: 40%;
+            background-color:#25D366;
+            color: white;
+            font-weight: bold;
+            margin-top: 01px;
+            font-family: poppinslight;
+        }
 
-img{
-    width: 580px;
-    margin-left: 10px;
-}
+        form [type="submit"]:hover {
+            cursor: pointer;
+        }
 
-#capsjc{
-    width: 180px;
-    
-}
-
-
-form{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    
-}
-
-input{
-    margin-top: 01px;
-    height: 20px;
-    padding: 20px;
-    border-radius: 20px;
-    border: none;
-    
-}
-
-form [type="submit"]{
-    height: 50px;
-    width: 40%;
-    background-color:#25D366;
-    color: white;
-    font-weight: bold;
-    margin-top: 01px;
-    font-family: poppinslight;
-}
-
-form [type="submit"]:hover{
-    cursor: pointer;
-}
-
+        /* Media Queries para dispositivos móveis */
         @media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
+            body {
+                padding: 10px;
+            }
 
-    header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
 
-    #title h1 {
-        font-size: 18px;
-        line-height: 8px;
-    }
+            #title h1 {
+                font-size: 18px;
+                line-height: 8px;
+            }
 
-    #whatsapp-btn {
-        margin-left: 0;
-        margin-top: 10px;
-    }
+            #whatsapp-btn {
+                margin-left: 0;
+                margin-top: 10px;
+            }
 
-    main {
-        flex-direction: column;
-        align-items: center;
-    }
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
 
-    aside {
-        width: 100%;
-        text-align: center;
-    }
+            aside {
+                width: 100%;
+                text-align: center;
+            }
 
-    img {
-        display: none;
-    }
+            img {
+                width: 100%;
+                max-width: 100%;
+                margin-left: 0;
+                margin-top: 10px;
+            }
 
-    form {
-        width: 100%;
-        margin-top: 20px;
-    }
+            form {
+                width: 100%;
+                margin-top: 20px;
+            }
 
-    form [type="submit"] {
-        width: 100%;
-    }
+            form [type="submit"] {
+                width: 100%;
+            }
 
-    h2 {
-        font-size: 24px;
-        line-height: 28px;
-    }
+            h2 {
+                font-size: 24px;
+                line-height: 28px;
+            }
 
-    p {
-        line-height: 18px;
-        font-size: 16px;
-    }
-}
+            p {
+                line-height: 18px;
+                font-size: 16px;
+            }
+        }
 
-@media (max-width: 480px) {
-    #title h1 {
-        font-size: 16px;
-    }
+        @media (max-width: 480px) {
+            #title h1 {
+                font-size: 16px;
+            }
 
-    h2 {
-        font-size: 20px;
-    }
+            h2 {
+                font-size: 20px;
+            }
 
-    p {
-        font-size: 14px;
-    }
+            p {
+                font-size: 14px;
+            }
 
-    form [type="submit"] {
-        height: 45px;
-        font-size: 16px;
-    }
-}
-
-
+            form [type="submit"] {
+                height: 45px;
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
-     <header>
+    <header>
         <img id="capsjc" src="./components/images/capsjc.png" alt="capsjc">
         <div id="title">
             <h1>Centro de Formação de Atletas</h1>
             <h1>Atlhetico Paranaense</h1>
             <h1>São José dos Campos</h1>
         </div>
-    <ul>
-        <a href="https://api.whatsapp.com/send?phone=5512974026554&text=" id="whatsapp-btn"> <li><i class="fab fa-whatsapp"></i> WhatsApp</li></a>
-    </ul>
+        <ul>
+            <a href="https://api.whatsapp.com/send?phone=5512974026554&text=" id="whatsapp-btn"> <li><i class="fab fa-whatsapp"></i> WhatsApp</li></a>
+        </ul>
     </header>
     <main> 
         <aside>
             <h2>Inscreva-se agora</h2>
-            <h2>Envie uma mesagem para agendar uma aula experimental</h2>
+            <h2>Envie uma mensagem para agendar uma aula experimental</h2>
             <p>Somos um Centro de Formação de Atletas de alto rendimento, oferecendo desde a iniciação até a categoria júnior. Proporcionamos aulas de futebol de campo e futsal, com foco no desenvolvimento e treino de alta performance.
             </p>
             <form id="whatsappForm">
@@ -243,7 +232,6 @@ form [type="submit"]:hover{
                 <input type="submit" value="Enviar Mensagem">
             </form>
         </aside>
-
         <article>
             <img src="./components/images/menino.jpg" alt="menino">
         </article>
@@ -260,8 +248,5 @@ form [type="submit"]:hover{
             window.location.href = url;
         });
     </script>
-
-
-
 </body>
 </html>
