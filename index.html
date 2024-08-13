@@ -28,8 +28,8 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: black; /* Ou outra cor, conforme desejado */
-            opacity: 0.7; /* Ajuste o valor da opacidade conforme necessário */
+            background-color: black;
+            opacity: 0.7;
             z-index: -1;
         }
 
@@ -47,7 +47,7 @@
 
         li {
             display: inline-block;
-            margin: 20px;
+            margin: 15px;
         }
 
         a {
@@ -58,7 +58,7 @@
             border: 2px solid #25D366;
             padding: 10px;
             border-radius: 15px;
-            margin-left: 250px;
+            margin-left: 10px;
         }
 
         #whatsapp-btn:hover {
@@ -66,8 +66,20 @@
             color: white;
         }
 
+        #instagram-btn {
+            border: 2px solid #E4405F;
+            padding: 10px;
+            border-radius: 15px;
+            margin-left: 10px;
+        }
+
+        #instagram-btn:hover {
+            background-color: #E4405F;
+            color: white;
+        }
+
         h1 {
-            font-weight: 200;
+            font-weight: 100;
         }
 
         main {
@@ -78,7 +90,7 @@
 
         h2 {
             font-size: 30px;
-            line-height: 30px;
+            font-weight: 100;
             font-family: poppinsmedium;
             margin-top: 01px;
             margin-bottom: 01px;
@@ -88,7 +100,7 @@
             line-height: 20px;
             max-width: 500px;
             font-family: poppinslight;
-            margin-top: 05px;
+            margin-top: 10px;
             margin-bottom: 05px;
         }
 
@@ -98,11 +110,9 @@
         }
 
         #capsjc {
-            width: 180px ;
+            width: 180px;
             flex-direction: column;
             display: flex;
-            
-
         }
 
         form {
@@ -148,28 +158,21 @@
             #title h1 {
                 font-size: 18px;
                 line-height: 8px;
-                margin-left: 60px;
+                margin-left: 10px;
             }
 
-            #whatsapp-btn {
-                margin-left: 10px;
-                
-                
-                
+            #whatsapp-btn, #instagram-btn {
+                margin-right: 30px;
             }
-            
+
             #capsjc {
-            align-items: center;
-            margin-left: 70px;
-            
-            
-           
+                align-items: center;
+                margin-left: 10px;
             }
 
             main {
                 flex-direction: column;
                 align-items: center;
-                
             }
 
             aside {
@@ -194,13 +197,11 @@
             h2 {
                 font-size: 24px;
                 line-height: 28px;
-                
             }
 
             p {
                 line-height: 18px;
                 font-size: 16px;
-                
             }
         }
 
@@ -212,7 +213,6 @@
 
             h2 {
                 font-size: 19px;
-                
             }
 
             p {
@@ -237,7 +237,12 @@
             <h1>São José dos Campos</h1>
         </div>
         <ul>
-            <a href="https://api.whatsapp.com/send?phone=5512974026554&text=Olá%20gostaria%20de%20mais%20informações." id="whatsapp-btn"> <li><i class="fab fa-whatsapp"></i> WhatsApp</li></a>
+            <a href="https://api.whatsapp.com/send?phone=5512974026554&text=Olá%20gostaria%20de%20mais%20informações." id="whatsapp-btn">
+                <li><i class="fab fa-whatsapp"></i> WhatsApp</li></a>
+
+            <a href="https://www.instagram.com/athleticoparanaensesjc/" id="instagram-btn">
+                <li><i class="fab fa-instagram"></i> Instagram</li>
+            </a>
         </ul>
     </header>
     <main> 
